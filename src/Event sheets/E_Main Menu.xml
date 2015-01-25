@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Main Menu</name>
+    <events>
+        <variable constant="0" name="IsConstructor" sid="88054312855663" static="0" type="number">1</variable>
+        <include>E_Music &amp; Sound</include>
+        <include>E_Common</include>
+        <event-block sid="3979133274021839">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8429697735283196" type="Touch">
+                    <param id="0" name="Object">btnPlay</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1767849658123001" type="System">
+                    <param id="0" name="Layout">Menu Level</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7670851318308463">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7421584609273254" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6459370220465802">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4931933560189027" type="System">
+                            <param id="0" name="Variable">IsConstructor</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="188605160649583" type="System">
+                            <param id="0" name="Variable">IsConstructor</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8904355611895389" type="System">
+                            <param id="0" name="Variable">Music</param>
+                            <param id="1" name="Value">&quot;V1&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="5591498719630023" type="Function">
+                            <param id="0" name="Name">&quot;MusicPlay&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1827289657943134">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6506755115754537" type="System">
+                            <param id="0" name="Variable">MusicMuted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="3994964824321499" type="btnMusic1">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4617103242883591">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="3169299221775335" type="System">
+                            <param id="0" name="Variable">SoundMuted</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="8307405061601123" type="btnSound1">
+                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

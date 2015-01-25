@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Menu Level</name>
+    <events>
+        <include>E_Music &amp; Sound</include>
+        <include>E_Common</include>
+        <event-block sid="9234186851344691">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5008462756158895" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5667179273609572">
+                    <conditions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="7703647229203851" type="btnLevel1">
+                            <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1504265580776327">
+                    <conditions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="4327862900020507" type="btnLevel2">
+                            <param id="0" name="Animation">&quot;Lock&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3659965924413681">
+                    <conditions />
+                    <actions>
+                        <action id="4" name="Set animation" sid="9422383312191348" type="btnLevel3">
+                            <param id="0" name="Animation">&quot;Lock&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="8476104808059847">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8458049609890201" type="Touch">
+                    <param id="0" name="Object">btnBack</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5474907861258205" type="System">
+                    <param id="0" name="Layout">Main Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

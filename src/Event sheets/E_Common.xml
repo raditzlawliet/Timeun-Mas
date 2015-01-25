@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Common</name>
+    <events>
+        <variable constant="0" name="Layout" sid="3146467198507634" static="0" type="text">Menu</variable>
+        <variable constant="0" name="State" sid="5194930893133144" static="0" type="text"></variable>
+        <event-block sid="7172571470491493">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6306719676211325" type="System" />
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="8137107912410223" type="System">
+                    <param id="0" name="Group name">&quot;FadeIn&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="7162983110898961" title="FadeIn">
+            <sub-events>
+                <event-block sid="1053729753850174">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4972560316838092" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;Fading&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="592969154559605" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">&quot;Fading&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="540905781016451" type="Fader">
+                            <param id="0" name="X">640</param>
+                            <param id="1" name="Y">360</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="2720133270990299" type="Fader">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4233903610608283">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="386204549473547" type="Fader">
+                            <param id="0" name="Comparison">4</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="3856900684820321" type="Fader">
+                            <param id="0" name="Opacity">fader.Opacity - 400 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1771717977647383">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="5975839229003091" type="Fader">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Opacity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2485933944809265" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">&quot;StartLayout&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="9738610824770981" type="System">
+                            <param id="0" name="Group name">&quot;FadeIn&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2026114380320868" title="FadeOut">
+            <sub-events>
+                <event-block sid="9459322724746571">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8572865279845852" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">&quot;Fading&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="3429017327356785" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">&quot;Fading&quot;</param>
+                        </action>
+                        <action id="-3" name="Set position" sid="6063350016140801" type="Fader">
+                            <param id="0" name="X">640</param>
+                            <param id="1" name="Y">360</param>
+                        </action>
+                        <action id="-16" name="Set opacity" sid="867410292018148" type="Fader">
+                            <param id="0" name="Opacity">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6124319084054812">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="6876006004043727" type="Fader">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="9762310618460306" type="Fader">
+                            <param id="0" name="Opacity">fader.Opacity + 400 * dt</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2856528173250145">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="517216865733085" type="Fader">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Opacity">100</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8334907774585184" type="System">
+                            <param id="0" name="Variable">State</param>
+                            <param id="1" name="Value">&quot;Fadded&quot;</param>
+                        </action>
+                        <action id="-12" name="Set group active" sid="5595366148940282" type="System">
+                            <param id="0" name="Group name">&quot;FadeOut&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Music &amp; Sound</name>
+    <events>
+        <variable constant="0" name="MusicMuted" sid="6327257000895539" static="0" type="number">0</variable>
+        <variable constant="0" name="SoundMuted" sid="8146943471067733" static="0" type="number">0</variable>
+        <variable constant="0" name="Music" sid="2604947884109667" static="0" type="text"></variable>
+        <variable constant="0" name="SoundFX" sid="1868640392426195" static="0" type="text"></variable>
+        <event-group description="" sid="1611945518062292" title="Music">
+            <sub-events>
+                <event-block sid="8994952316961465">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6925829854790475" type="Function">
+                            <param id="0" name="Name">&quot;MusicPlay&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9388963357749378">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6124952005607096" type="System">
+                                    <param id="0" name="Variable">MusicMuted</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="2595951773012209" type="Audio">
+                                    <param id="0" name="Folder">1</param>
+                                    <param id="1" name="Audio file name">Music</param>
+                                    <param id="3" name="Loop">1</param>
+                                    <param id="4" name="Volume">-5</param>
+                                    <param id="2" name="Tag (optional)">&quot;Bg&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="1733570652841391">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9414036945348131" type="Touch">
+                            <param id="0" name="Object">btnMusic1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7493974390262105">
+                            <conditions>
+                                <condition id="-9" name="Is visible" sid="8815689650580981" type="btnMusic1" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="3865708203881614">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="5193274873001581" type="System">
+                                            <param id="0" name="Variable">MusicMuted</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="6135688125231255" type="System">
+                                            <param id="0" name="Variable">MusicMuted</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action disabled="1" id="3" name="Set volume" sid="3936221591390077" type="Audio">
+                                            <param id="0" name="Tag">&quot;Bg&quot;</param>
+                                            <param id="1" name="dB">-100</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="4245890196915795" type="Audio">
+                                            <param id="0" name="Tag">&quot;Bg&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="6" name="Stop" sid="3178390848288699" type="Audio">
+                                            <param id="0" name="Tag">&quot;Bg&quot;</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="9757953508856022" type="btnMusic1">
+                                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="1261109940888454">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="6429656592625965" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="2703145677009906" type="System">
+                                            <param id="0" name="Variable">MusicMuted</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action disabled="1" id="3" name="Set volume" sid="3250124041198382" type="Audio">
+                                            <param id="0" name="Tag">&quot;Bg&quot;</param>
+                                            <param id="1" name="dB">-5</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="3102619508965795" type="Audio">
+                                            <param id="0" name="Tag">&quot;Bg&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="2808538538437393" type="btnMusic1">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="3906328752743731">
+                                            <conditions>
+                                                <condition id="5" inverted="1" name="Is tag playing" sid="6689782320198018" type="Audio">
+                                                    <param id="0" name="Tag">&quot;Bg&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="7" name="Play (by name)" sid="3727835670189588" type="Audio">
+                                                    <param id="0" name="Folder">1</param>
+                                                    <param id="1" name="Audio file name">Music</param>
+                                                    <param id="3" name="Loop">1</param>
+                                                    <param id="4" name="Volume">-5</param>
+                                                    <param id="2" name="Tag (optional)">&quot;Bg&quot;</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="9395100866169165" title="Sound">
+            <sub-events>
+                <event-block sid="9756605531907206">
+                    <conditions>
+                        <condition id="0" name="On function" sid="5012447214740399" type="Function">
+                            <param id="0" name="Name">&quot;SoundPlay&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="5800151892914347">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6199858201407633" type="System">
+                                    <param id="0" name="Variable">SoundMuted</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="7" name="Play (by name)" sid="6634602843426898" type="Audio">
+                                    <param id="0" name="Folder">1</param>
+                                    <param id="1" name="Audio file name">SoundFX</param>
+                                    <param id="3" name="Loop">0</param>
+                                    <param id="4" name="Volume">-5</param>
+                                    <param id="2" name="Tag (optional)">&quot;SFX&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="488678851422468">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="970879685701944" type="Touch">
+                            <param id="0" name="Object">btnSound1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="7171286008087817">
+                            <conditions>
+                                <condition id="-9" name="Is visible" sid="7291557341026045" type="btnSound1" />
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="4181474758713894">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="180943196806549" type="System">
+                                            <param id="0" name="Variable">SoundMuted</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="4136633311791727" type="System">
+                                            <param id="0" name="Variable">SoundMuted</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action disabled="1" id="3" name="Set volume" sid="4917623806668456" type="Audio">
+                                            <param id="0" name="Tag">&quot;SFX&quot;</param>
+                                            <param id="1" name="dB">-100</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="4789504859004448" type="Audio">
+                                            <param id="0" name="Tag">&quot;SFX&quot;</param>
+                                            <param id="1" name="State">0</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="1034116818836784" type="btnSound1">
+                                            <param id="0" name="Animation">&quot;Off&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="7394531416837895">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="5702354493697827" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="8742758154118632" type="System">
+                                            <param id="0" name="Variable">SoundMuted</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                        <action disabled="1" id="3" name="Set volume" sid="6866475890104206" type="Audio">
+                                            <param id="0" name="Tag">&quot;SFX&quot;</param>
+                                            <param id="1" name="dB">-5</param>
+                                        </action>
+                                        <action id="2" name="Set muted" sid="6485182738785527" type="Audio">
+                                            <param id="0" name="Tag">&quot;SFX&quot;</param>
+                                            <param id="1" name="State">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="7014925978965828" type="btnSound1">
+                                            <param id="0" name="Animation">&quot;On&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="1599776795365864">
+            <conditions>
+                <condition id="3" name="On touched object" sid="721187287987634" type="Touch">
+                    <param id="0" name="Object">ButtonUI</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4572754124463304" type="System">
+                    <param id="0" name="Variable">SoundFX</param>
+                    <param id="1" name="Value">&quot;Click&quot;</param>
+                </action>
+                <action id="0" name="Call function" sid="2071059700738312" type="Function">
+                    <param id="0" name="Name">&quot;SoundPlay&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4439699948610456">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1951273357839164" type="Mouse">
+                    <param id="0" name="Object">ButtonUI</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="1618264440346025" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+                <action id="9" name="Set scale" sid="6552868596997028" type="ButtonUI">
+                    <param id="0" name="Scale">1.1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8942325693349442">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5119617346976934" type="Mouse">
+                    <param id="0" name="Object">ButtonLevels</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="9719187364184219">
+                    <conditions>
+                        <condition id="2" name="Is playing" sid="421677676925911" type="ButtonLevels">
+                            <param id="0" name="Animation">&quot;Unlock&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set cursor style" sid="6310597701733314" type="Mouse">
+                            <param id="0" name="Cursor style">1</param>
+                        </action>
+                        <action id="9" name="Set scale" sid="5685534091804644" type="ButtonLevels">
+                            <param id="0" name="Scale">1.1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="208429739393067">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="7869755906810401" type="Mouse">
+                    <param id="0" name="Object">ButtonUI</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="1118192166383034" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+                <action id="9" name="Set scale" sid="9658391896832631" type="ButtonUI">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4434663079592892">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="5051187186745935" type="Mouse">
+                    <param id="0" name="Object">ButtonLevels</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="2526519757290742" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+                <action id="9" name="Set scale" sid="7661079416111703" type="ButtonLevels">
+                    <param id="0" name="Scale">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Main Menu</layout>
+        <layout order="2">Menu Level</layout>
+        <event-sheet order="1">E_Main Menu</event-sheet>
+        <event-sheet active="1" order="3">E_Menu Level</event-sheet>
+        <event-sheet order="4">E_Music &amp; Sound</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="0" name="ButtonUI" />
+        <family expanded="0" name="ButtonLevels" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/btnBack/" />
+        <folder expanded="1" path="animation-folder/btnPlay/" />
+        <folder expanded="1" path="animation-folder/bgMenuLevels/" />
+        <folder expanded="1" path="animation-folder/btnLevel1/" />
+        <folder expanded="1" path="animation-folder/btnLevel2/" />
+        <folder expanded="1" path="animation-folder/btnLevel3/" />
+        <folder expanded="1" path="animation-folder/bgMainMenu/" />
+        <folder expanded="1" path="animation-folder/Fader/" />
+        <folder expanded="1" path="animation-folder/btnMusic1/" />
+        <folder expanded="1" path="animation-folder/btnSound1/" />
+        <folder expanded="1" path="animation-folder/muteMusic1/" />
+        <folder expanded="1" path="animation-folder/muteSound1/" />
+        <folder expanded="1" path="animation-folder/bgMenu/" />
+        <folder expanded="1" path="animation-folder/TitleCredits/" />
+    </folders-expanded>
+</c2uistate>

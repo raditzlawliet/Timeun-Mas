@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>3kmslw6wh02wz</unique-id>
+    <saved-with-version>19200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="btnBack" sid="6835032967567347">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6167942942430975" speed="5">
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.504" original-source="D:\PROJECT 2014\Asset Button\btnPrev.png">
+                        <collision-poly>
+                            <point x="0.151316" y="0.152318" />
+                            <point x="0.5" y="0.00662252" />
+                            <point x="0.848684" y="0.152318" />
+                            <point x="0.993421" y="0.496689" />
+                            <point x="0.848684" y="0.847682" />
+                            <point x="0.5" y="0.993378" />
+                            <point x="0.151316" y="0.847682" />
+                            <point x="0.00657895" y="0.496689" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnPlay" sid="4031414503701103">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6734103209173672" speed="5">
+                    <frame duration="1" hotspotX="0.501818" hotspotY="0.506667" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\button_Play.png">
+                        <collision-poly>
+                            <point x="0.146667" y="0.147651" />
+                            <point x="0.5" y="0" />
+                            <point x="0.853333" y="0.147651" />
+                            <point x="1" y="0.496644" />
+                            <point x="0.853333" y="0.852349" />
+                            <point x="0.5" y="1" />
+                            <point x="0.146667" y="0.852349" />
+                            <point x="0" y="0.496644" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgMenuLevels" sid="7535639479014406">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1486318620354891" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_LEVEL SELECT\level_Select Timeun Mas BG.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="4806901807664959">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Function" sid="8835903226901748">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="btnLevel1" sid="3429612787815732">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unlock" pingpong="0" repeatcount="1" repeatto="0" sid="3475970306280372" speed="5">
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.50237" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_LEVEL SELECT\button_Level_1.png">
+                        <collision-poly>
+                            <point x="0.138365" y="0.104265" />
+                            <point x="0.496855" y="0.00473934" />
+                            <point x="0.72956" y="0.203791" />
+                            <point x="0.993711" y="0.49763" />
+                            <point x="0.716981" y="0.78673" />
+                            <point x="0.496855" y="0.810427" />
+                            <point x="0.320755" y="0.758294" />
+                            <point x="0.113208" y="0.49763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnLevel2" sid="7650960379673562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unlock" pingpong="0" repeatcount="1" repeatto="0" sid="9061008765894723" speed="5">
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.50237" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_LEVEL SELECT\button_Level_2.png">
+                        <collision-poly>
+                            <point x="0.138365" y="0.104265" />
+                            <point x="0.496855" y="0" />
+                            <point x="0.72956" y="0.203791" />
+                            <point x="0.993711" y="0.49763" />
+                            <point x="0.716981" y="0.78673" />
+                            <point x="0.496855" y="0.810427" />
+                            <point x="0.314465" y="0.763033" />
+                            <point x="0.113208" y="0.49763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Lock" pingpong="0" repeatcount="1" repeatto="0" sid="6583599922538536" speed="5">
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.50237" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_LEVEL SELECT\2.png">
+                        <collision-poly>
+                            <point x="0.138365" y="0.104265" />
+                            <point x="0.496855" y="0.00473934" />
+                            <point x="0.72956" y="0.203791" />
+                            <point x="0.993711" y="0.49763" />
+                            <point x="0.716981" y="0.78673" />
+                            <point x="0.496855" y="0.810427" />
+                            <point x="0.320755" y="0.758294" />
+                            <point x="0.113208" y="0.49763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnLevel3" sid="1902287129939078">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Unlock" pingpong="0" repeatcount="1" repeatto="0" sid="3117905247055625" speed="5">
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.50237" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_LEVEL SELECT\button_Level_3.png">
+                        <collision-poly>
+                            <point x="0.138365" y="0.104265" />
+                            <point x="0.496855" y="0" />
+                            <point x="0.735849" y="0.199052" />
+                            <point x="1" y="0.49763" />
+                            <point x="0.716981" y="0.78673" />
+                            <point x="0.496855" y="0.815166" />
+                            <point x="0.314465" y="0.763033" />
+                            <point x="0.113208" y="0.49763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Lock" pingpong="0" repeatcount="1" repeatto="0" sid="7833810856572805" speed="5">
+                    <frame duration="1" hotspotX="0.503145" hotspotY="0.50237" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_LEVEL SELECT\3.png">
+                        <collision-poly>
+                            <point x="0.138365" y="0.104265" />
+                            <point x="0.496855" y="0.00473934" />
+                            <point x="0.72956" y="0.203791" />
+                            <point x="0.993711" y="0.49763" />
+                            <point x="0.716981" y="0.78673" />
+                            <point x="0.496855" y="0.810427" />
+                            <point x="0.320755" y="0.758294" />
+                            <point x="0.113208" y="0.49763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bgMainMenu" sid="2783357635446694">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695176021876474" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Fader" sid="8900949147621915">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1910073173891442" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnMusic1" sid="2810762394791901">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="2771376366381108" speed="5">
+                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\button_Music.png">
+                        <collision-poly>
+                            <point x="0.0131579" y="0.0138889" />
+                            <point x="0.5" y="0" />
+                            <point x="0.986842" y="0.0138889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.868421" y="0.861111" />
+                            <point x="0.5" y="1" />
+                            <point x="0.131579" y="0.861111" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Off" pingpong="0" repeatcount="1" repeatto="0" sid="5244598684593473" speed="5">
+                    <frame duration="1" hotspotX="0.502924" hotspotY="0.5" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\button_Music_OFF.png">
+                        <collision-poly>
+                            <point x="0.111111" y="0.211111" />
+                            <point x="0.497076" y="0.0777778" />
+                            <point x="0.906433" y="0.177778" />
+                            <point x="0.900585" y="0.5" />
+                            <point x="0.918129" y="0.844444" />
+                            <point x="0.497076" y="0.955556" />
+                            <point x="0.0994152" y="0.811111" />
+                            <point x="0.0350877" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="btnSound1" sid="1091300293654179">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="On" pingpong="0" repeatcount="1" repeatto="0" sid="1527303653786109" speed="5">
+                    <frame duration="1" hotspotX="0.503185" hotspotY="0.505618" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\button_SFX.png">
+                        <collision-poly>
+                            <point x="0.0131579" y="0.0138889" />
+                            <point x="0.5" y="0" />
+                            <point x="0.986842" y="0.0138889" />
+                            <point x="1" y="0.5" />
+                            <point x="0.868421" y="0.861111" />
+                            <point x="0.5" y="1" />
+                            <point x="0.131579" y="0.861111" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Off" pingpong="0" repeatcount="1" repeatto="0" sid="1197561049750943" speed="5">
+                    <frame duration="1" hotspotX="0.503185" hotspotY="0.505618" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\button_SFX_OFF.png">
+                        <collision-poly>
+                            <point x="0.089172" y="0.157303" />
+                            <point x="0.496815" y="0.0449438" />
+                            <point x="0.917197" y="0.146067" />
+                            <point x="0.853503" y="0.494382" />
+                            <point x="0.828025" y="0.696629" />
+                            <point x="0.496815" y="0.94382" />
+                            <point x="0.101911" y="0.820225" />
+                            <point x="0.044586" y="0.494382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="muteMusic1" sid="6376426687978916">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4694437567876356" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.148936" y="0.152174" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.152174" />
+                            <point x="1" y="0.5" />
+                            <point x="0.851064" y="0.847826" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.847826" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="muteSound1" sid="4210361504665949">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814849411416548" speed="5">
+                    <frame duration="1" hotspotX="0.510638" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.148936" y="0.152174" />
+                            <point x="0.489362" y="0" />
+                            <point x="0.851064" y="0.152174" />
+                            <point x="1" y="0.5" />
+                            <point x="0.851064" y="0.847826" />
+                            <point x="0.489362" y="1" />
+                            <point x="0.148936" y="0.847826" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="8990524370650611">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="bgMenu" sid="8326632370782513">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2552464467488357" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\mainMenu_BG.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TitleCredits" sid="179470593064703">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4687270921007339" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501299" original-source="D:\PROJECT 2014\GGJ 2015\GGJ\GGJ\_MAIN MENU\title.png">
+                        <collision-poly>
+                            <point x="0.142132" y="0.145455" />
+                            <point x="0.5" y="0.00779221" />
+                            <point x="0.703046" y="0.303896" />
+                            <point x="0.756345" y="0.498701" />
+                            <point x="0.967005" y="0.966234" />
+                            <point x="0.0329949" y="0.966234" />
+                            <point x="0.203046" y="0.498701" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="4325066854664205">
+            <plugin id="Mouse" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="ButtonUI" plugin-id="Sprite" sid="2844741321082157">
+            <members>
+                <member>btnBack</member>
+                <member>btnMusic1</member>
+                <member>btnPlay</member>
+                <member>btnSound1</member>
+                <member>TitleCredits</member>
+            </members>
+        </family>
+        <family name="ButtonLevels" plugin-id="Sprite" sid="5845613159790448">
+            <members>
+                <member>btnLevel1</member>
+                <member>btnLevel2</member>
+                <member>btnLevel3</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Main Menu.xml</layout>
+        <layout>Menu Level.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>E_Main Menu.xml</event-sheet>
+        <event-sheet>E_Menu Level.xml</event-sheet>
+        <event-sheet>E_Common.xml</event-sheet>
+        <event-sheet>E_Music &amp; Sound.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="5">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Function" uid="6" />
+        <global-instance type="Audio" uid="16">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Mouse" uid="15" />
+    </global-instances>
+    <sounds-folder>
+        <file name="Click.m4a" />
+        <file name="Click.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="V1.m4a" />
+        <file name="V1.ogg" />
+        <file name="V2.m4a" />
+        <file name="V2.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
