@@ -15,9 +15,9 @@ BASIC
 
 2. [Arrow Up] for jump
 
-3. [ctrl] for Action
+3. [ctrl] for Action (Q for old version)
 
-4. [Shift] for change seed 
+4. [Shift] for change seed (W for old version)
 
 RULES
 
